@@ -86,55 +86,45 @@ async function populateCardsView(filterBy = "", lazyLoad = true) {
         <h4>${monster.name}</h4>
         <dl>
           <div class="item">
-            <dt>Level:</dt>
-            <dd>${monster.level}</dd>
+            <dt>Size:</dt><dd>${monster.size || "Not Available"}</dd>
           </div>
           <div class="item">
-            <dt>Range:</dt>
-            <dd>${monster.range || "N/A"}</dd>
+            <dt>Type:</dt><dd>${monster.type || "Not Available"}</dd>
           </div>
           <div class="item">
-            <dt>Components:</dt>
-            <dd>${monster.components || "N/A"}</dd>
+            <dt>Alignment:</dt><dd>${monster.alignment || "Not Available"}</dd>
           </div>
           <div class="item">
-            <dt>Material:</dt>
-            <dd>${monster.material || "N/A"}</dd>
+            <dt>Hit Points:</dt><dd>${monster.hitPoints || "Not Available"}</dd>
           </div>
           <div class="item">
-            <dt>Ritual:</dt>
-            <dd>${monster.ritual || "N/A"}</dd>
+            <dt>Hit Dice:</dt><dd>${monster.hitDice || "Not Available"}</dd>
           </div>
           <div class="item">
-            <dt>Duration:</dt>
-            <dd>${monster.duration || "N/A"}</dd>
+            <dt>Hit Point Roll:</dt><dd>${monster.hitPointsRoll || "Not Available"}</dd>
           </div>
           <div class="item">
-            <dt>Concentration:</dt>
-            <dd>${monster.concentration || "N/A"}</dd>
+            <dt>Dexterity:</dt><dd>${monster.dexterity || "Not Available"}</dd>
           </div>
           <div class="item">
-            <dt>Casting Time:</dt>
-            <dd>${monster.castingTime || "N/A"}</dd>
+            <dt>Constitution:</dt><dd>${monster.constitution || "Not Available"}</dd>
           </div>
           <div class="item">
-            <dt>Attack Type:</dt>
-            <dd>${monster.attackType || "N/A"}</dd>
+            <dt>Intelligence:</dt><dd>${monster.intelligence || "Not Available"}</dd>
           </div>
           <div class="item">
-            <dt>Damage:</dt>
-            <dd>${
-              monster.damage
-                ? monster.damage?.damage_type?.name || monster.damage
-                : "N/A"
-            }</dd>
+            <dt>Wisdom:</dt><dd>${monster.wisdom || "Not Available"}</dd>
           </div>
           <div class="item">
-            <dt>School:</dt>
-            <dd>${monster.school ? monster.school.name : "N/A"}</dd>
+            <dt>Charisma:</dt><dd>${monster.charisma || "Not Available"}</dd>
+          </div>
+          <div class="item">
+            <dt>Languages:</dt><dd>${monster.languages || "Not Available"}</dd>
+          </div>
+          <div class="item">
+            <dt>XP:</dt><dd>${monster.xp || "Not Available"}</dd>
           </div>
         </dl>
-        <p>${monster.description || "No description available."}</p>
       `;
       dialog.showModal();
     });
