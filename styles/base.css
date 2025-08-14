@@ -226,7 +226,7 @@ picture {
   background: none;
   border: 0;
   display: none;
-  color: #fff;
+  color: var(--accent-primary);
   font-size: 1.5rem;
   position: absolute;
   right: 0.6em;
@@ -244,6 +244,10 @@ picture {
 .class-features, .spell-features, .feature-features, .monster-features {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+#menu.open {
+  color: white;
 }
 
 .open {
