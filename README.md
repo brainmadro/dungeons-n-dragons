@@ -1,4 +1,5 @@
 ## Dungeons & Dragons Reference Web App
+
 ### Description
 This project is a dynamic website that serves as a reference tool for Dungeons & Dragons 5th Edition (D&D 5e). It allows users to browse and search for spells, monsters, races, classes, and more using the free D&D 5e API.
 
